@@ -8,7 +8,7 @@ const Skills = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* frontend  */}
-        <div>
+        <div className="md:border-r border-black md:pr-4">
           <h1 className="text-center font-thin mb-4 text-[32px]">
             Frontend Technologies
           </h1>

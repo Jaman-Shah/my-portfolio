@@ -4,7 +4,7 @@ import { FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-2 p-4 ">
+    <div className="flex flex-col-reverse md:flex-row gap-2 p-4 ">
       {/* left side  */}
       <div className=" w-full md:w-1/2">
         <div className="text-center">
@@ -49,15 +49,14 @@ const Banner = () => {
       </div>
 
       {/* right side  */}
-      <div className="w-full md:w-1/2 border-l-[5px] border-orange-500">
-        <div className="flex flex-col">
-          <div className="flex justify-center items-center p-2">
-            <img
-              className="rounded-2xl w-full"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOeZjZWEr4oFmJhILQQgTy7-WUX9BmRrAAFw&s"
-              alt=""
-            />
-          </div>
+      <div className="w-full md:w-1/2 border-b-[5px] md:border-b-0 md:border-l-[5px] pb-4 border-orange-500">
+        <div className="flex flex-col p-4">
+          <div
+            className="h-[500px]  bg-cover bg-top p-2 rounded-3xl"
+            style={{
+              backgroundImage: `url("../../../public/images/profile.jpg")`,
+            }}
+          ></div>
           <div className="">
             <div className="flex justify-center gap-4 mt-4">
               <FaGithub className="text-3xl text-black cursor-pointer" />

@@ -14,40 +14,28 @@ const Skills = () => {
           </h1>
           <div className="grid grid-cols-3 gap-4">
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
-              <img
-                src="../../../public/images/html.png"
-                alt="HTMl"
-                className="h-20 w-20"
-              />
+              <img src="/images/html.png" alt="HTMl" className="h-20 w-20" />
               <p>HTML</p>
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
-              <img
-                src="../../../public/images/css.png"
-                alt="CSS"
-                className="h-20 w-20"
-              />
+              <img src="/images/css.png" alt="CSS" className="h-20 w-20" />
               <p>CSS</p>
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
               <img
-                src="../../../public/images/javascript.png"
+                src="/images/javascript.png"
                 alt="JAVASCRIPT"
                 className="h-20 w-20"
               />
               <p>JAVASCRIPT</p>
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
-              <img
-                src="../../../public/images/react.png"
-                alt="REACT"
-                className="h-20 w-20"
-              />
+              <img src="/images/react.png" alt="REACT" className="h-20 w-20" />
               <p>REACT</p>
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
               <img
-                src="../../../public/images/tailwind.png"
+                src="/images/tailwind.png"
                 alt="TAILWIND"
                 className="h-20 w-20"
               />
@@ -55,7 +43,7 @@ const Skills = () => {
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
               <img
-                src="../../../public/images/firebase.png"
+                src="/images/firebase.png"
                 alt="FIREBASE"
                 className="h-20 w-20"
               />
@@ -71,16 +59,12 @@ const Skills = () => {
           </h1>{" "}
           <div className="grid grid-cols-3 gap-4">
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
-              <img
-                src="../../../public/images/node.png"
-                alt="NODE JS"
-                className="h-20 w-20"
-              />
+              <img src="/images/node.png" alt="NODE JS" className="h-20 w-20" />
               <p>NODE JS</p>
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
               <img
-                src="../../../public/images/express.png"
+                src="/images/express.png"
                 alt="EXPRESS"
                 className="h-20 w-20"
               />
@@ -88,7 +72,7 @@ const Skills = () => {
             </div>
             <div className="flex flex-col items-center border border-gray-400 rounded-2xl p-4">
               <img
-                src="../../../public/images/mongodb.png"
+                src="/images/mongodb.png"
                 alt="MONGODB"
                 className="h-20 w-20"
               />

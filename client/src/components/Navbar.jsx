@@ -58,9 +58,13 @@ const Navbar = () => {
         transition={{ duration: 0.2, delay: 0.1 }}
         className={`${
           navbarBg ? "backdrop-filter border-b-0 backdrop-blur-lg" : "bg-white"
-        } flex z-10 justify-between items-center sticky border-b border-black text-xl w-full font-bold `}
+        } flex z-10 justify-between items-center sticky border-b border-black text-xl w-full font-bold mb-12`}
       >
-        <div>Logo</div>
+        <div className="font-bold text-[25px] md:text-[40px]">
+          <span className="font-thin">J</span>a
+          <span className="font-thin text-orange-500">m</span>
+          <span className="font-thin text-blue-500">a</span>n
+        </div>
         <div className="md:flex md:gap-4 items-center">{menuItems}</div>
         <div className="flex gap-2 items-center md:hidden">
           <RxHamburgerMenu

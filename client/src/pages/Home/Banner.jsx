@@ -15,7 +15,7 @@ const Banner = () => {
       <div className="w-full md:w-1/2">
         <div className="text-center">
           <div className="border-b pb-4 border-black mb-4">
-            <h1 className="font-bold text-4xl">Hi, </h1>
+            <h1 className="font-light text-[50px]">Hi, </h1>
             <h1 className="text-[50px]">
               I am <span className="text-blue-400 font-thin">Jaman Shah</span>
             </h1>

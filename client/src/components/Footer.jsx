@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white py-8 px-6 flex justify-between items-center">
+    <div className="bg-gray-800 mt-4 text-white py-8 px-6 flex justify-between items-center">
       <div className="flex flex-col">
         <p className="text-sm">&copy; 2024 Jaman Shah. All rights reserved.</p>
         <p className="text-sm">Designed with ❤️</p>

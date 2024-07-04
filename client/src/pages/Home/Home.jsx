@@ -5,7 +5,7 @@ import Projects from "./Projects";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mt-24 border-t">
       <Banner />
       <Skills />
       <Projects />

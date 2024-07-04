@@ -10,21 +10,21 @@ const Footer = () => {
       </div>
       <div className="flex gap-4">
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/Jaman-Shah"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub className="text-3xl hover:text-gray-400 cursor-pointer" />
         </a>
         <a
-          href="https://linkedin.com/in/your-linkedin"
+          href="https://linkedin.com/in/jamanshah"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin className="text-3xl hover:text-gray-400 cursor-pointer" />
         </a>
         <a
-          href="https://facebook.com/your-facebook"
+          href="https://facebook.com/jamanshah5400"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -4,6 +4,11 @@ import { BsDownload } from "react-icons/bs";
 import pdf from "/resume/Jaman_Shah_Resume.pdf"; // Update this path to your actual PDF file
 
 const Banner = () => {
+  //social media profile URLs
+  const githubUrl = "https://github.com/jaman-shah";
+  const linkedinUrl = "https://www.linkedin.com/in/jamanshah";
+  const facebookUrl = "https://facebook.com/jamanshah5400";
+
   return (
     <div className="flex flex-col-reverse md:flex-row gap-2 p-4 mt-24">
       {/* left side */}
@@ -74,9 +79,30 @@ const Banner = () => {
             }}
           ></div>
           <div className="flex justify-center gap-4 mt-4">
-            <FaGithub className="text-3xl text-black cursor-pointer" />
-            <FaLinkedin className="text-3xl text-blue-500 cursor-pointer" />
-            <FaFacebook className="text-3xl text-blue-600 cursor-pointer" />
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-black cursor-pointer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-blue-500 cursor-pointer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href={facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-blue-600 cursor-pointer"
+            >
+              <FaFacebook />
+            </a>
           </div>
         </div>
       </div>

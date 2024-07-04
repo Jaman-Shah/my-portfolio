@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -23,19 +24,22 @@ const Navbar = () => {
   }, []);
 
   const activeClass =
-    "py-3 px-4 font-light hover:text-red-400 hover:font-bold transition duration-500 text-white font-bold";
+    "py-3 px-4 font-light hover:text-red-400 hover:font-bold cursor-pointer transition duration-500 text-white font-bold";
 
   const menuItems = (
     <div className="hidden md:flex flex-col md:flex-row bg-[#a55eea] rounded-full md:relative">
-      <NavLink exact to="/" className={activeClass}>
+      <Link to="banner" smooth={true} duration={500} className={activeClass}>
         HOME
-      </NavLink>
-      <NavLink to="/skills" className={activeClass}>
+      </Link>
+      <Link to="skills" smooth={true} duration={500} className={activeClass}>
         SKILLS
-      </NavLink>
-      <NavLink to="/projects" className={activeClass}>
+      </Link>
+      <Link to="projects" smooth={true} duration={500} className={activeClass}>
         PROJECTS
-      </NavLink>
+      </Link>
+      <Link to="contact" smooth={true} duration={500} className={activeClass}>
+        CONTACT
+      </Link>
     </div>
   );
 
@@ -83,28 +87,41 @@ const Navbar = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="fixed top-0 left-0 w-full h-full bg-[#a55eea] flex flex-col items-center justify-center md:hidden"
           >
-            <NavLink
+            <Link
               onClick={() => setMenuOpen(!menuOpen)}
               exact
-              to="/"
+              to="banner"
               className={activeClass}
             >
               HOME
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               onClick={() => setMenuOpen(!menuOpen)}
-              to="/skills"
+              to="skills"
+              smooth={true}
+              duration={500}
               className={activeClass}
             >
               SKILLS
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               onClick={() => setMenuOpen(!menuOpen)}
-              to="/projects"
+              to="projects"
+              smooth={true}
+              duration={500}
               className={activeClass}
             >
               PROJECTS
-            </NavLink>
+            </Link>
+            <Link
+              onClick={() => setMenuOpen(!menuOpen)}
+              to="contact"
+              smooth={true}
+              duration={500}
+              className={activeClass}
+            >
+              MAIL ME
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
